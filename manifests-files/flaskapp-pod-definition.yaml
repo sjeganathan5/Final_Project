@@ -10,7 +10,7 @@ spec:
   - name: simple-webapp-mysql
     image: 754570389467.dkr.ecr.us-east-1.amazonaws.com/clo835-final-project:mysqlv1.1
     ports:
-    - containerPort: 8080
+    - containerPort: 81
     volumeMounts:
     - name: app-secret-volumes
       mountPath: "/opt/app-secret-volumes"
