@@ -1,7 +1,8 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: mysqldb-config
+  name: mysql-configmap
 data:
-  IMAGE_URL: ""
-  
+  FAILURE_IMAGE_URL: "https://finalss.s3.amazonaws.com/failed.png"
+  SUCCESS_IMAGE_URL: "https://finalss.s3.amazonaws.com/success.jpg"
+ 
