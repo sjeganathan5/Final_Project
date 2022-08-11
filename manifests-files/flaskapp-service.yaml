@@ -9,4 +9,4 @@ spec:
   ports:
   - port: 81
     targetPort: 81
-    nodeport: 30001
+
