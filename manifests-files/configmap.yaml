@@ -4,4 +4,4 @@ metadata:
   name: mysqldb-config
 data:
   IMAGE_URL: ""
-  HEADER: "SHAJAINI & SOWMYA"
+  
