@@ -5,5 +5,3 @@ metadata:
 data:
   success: "https://finalss.s3.amazonaws.com/success.jpg"
   failure: "https://finalss.s3.amazonaws.com/failed.png"
-  
- 
