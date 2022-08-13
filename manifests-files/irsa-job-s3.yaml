@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: eks-iam-s3
+spec:
+  template:
+    metadata:
+      labels:
+        app: eks-iam-s3
+    spec:
+      serviceAccountName: clo835
+      containers:
+      - name: simple-webapp-mysql
+        image: 391837845833.dkr.ecr.us-east-1.amazonaws.com/clo835-final-project:mysqlv0.1
+        args: ["s3", "ls"]
+      restartPolicy: Never

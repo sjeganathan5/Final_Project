@@ -6,9 +6,10 @@ metadata:
     app: example-app
     name: simple-webapp-mysql
 spec:
+  serviceAccountName: clo835
   containers:
   - name: simple-webapp-mysql
-    image: 754570389467.dkr.ecr.us-east-1.amazonaws.com/clo835-final-project:mysqlv1.1
+    image: 391837845833.dkr.ecr.us-east-1.amazonaws.com/clo835-final-project:mysqlv0.1
     ports:
     - containerPort: 81
     env:
