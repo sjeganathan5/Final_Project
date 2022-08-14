@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: flaskapp-configmap
 data:
-  success: "https://finalss.s3.amazonaws.com/success.jpg"
-  failure: "https://finalss.s3.amazonaws.com/failed.png"
+  SUCCESS_IMAGE_URL: "https://finalprojs3bucket.s3.amazonaws.com/success.jpg"
+  FAILURE_IMAGE_URL: "https://finalprojs3bucket.s3.amazonaws.com/failed.png"
