@@ -17,7 +17,7 @@ spec:
       serviceAccountName: clo835
       containers:
       - name: flaskapp
-        image: 754570389467.dkr.ecr.us-east-1.amazonaws.com/clo835-final-project:mysqlv1.1
+        image: 391837845833.dkr.ecr.us-east-1.amazonaws.com/clo835-final-project:mysqlv1.1
         ports:
         - containerPort: 81
         env:
@@ -25,12 +25,12 @@ spec:
           valueFrom: 
             configMapKeyRef:
               name: flaskapp-configmap
-              key: success
+              key: SUCCESS_IMAGE_URL
         - name: FAILURE_IMAGE_URL
           valueFrom: 
             configMapKeyRef:
               name: flaskapp-configmap
-              key: failure
+              key: FAILURE_IMAGE_URL
         volumeMounts:
           - name: app-secret-volumes
             mountPath: "/opt/app-secret-volumes"
