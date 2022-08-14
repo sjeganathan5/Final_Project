@@ -17,7 +17,7 @@ spec:
       serviceAccountName: clo835
       containers:
       - name: flaskapp
-        image: 391837845833.dkr.ecr.us-east-1.amazonaws.com/clo835-final-project:mysqlv0.1
+        image: 754570389467.dkr.ecr.us-east-1.amazonaws.com/clo835-final-project:mysqlv1.1
         ports:
         - containerPort: 81
         env:
