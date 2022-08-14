@@ -10,8 +10,8 @@ DB_Host = os.environ.get('DB_Host') or "mysql"
 DB_Database = os.environ.get('DB_Database') or "mysql"
 DB_User = os.environ.get('DB_User') 
 DB_Password = os.environ.get('DB_Password') 
-SUCCESS_URL = os.environ.get('SUCCESS_URL') or "https://finalss.s3.amazonaws.com/success.jpg"
-FAILURE_URL = os.environ.get('FAILURE_URL') or "https://finalss.s3.amazonaws.com/failed.png"
+SUCCESS_URL = os.environ.get('SUCCESS_IMAGE_URL') or "https://finalss.s3.amazonaws.com/success.jpg"
+FAILURE_URL = os.environ.get('FAILURE_IMAGE_URL') or "https://finalss.s3.amazonaws.com/failed.png"
 
 @app.route("/")
 def main():
